@@ -1,8 +1,12 @@
+"use strict"
+
 window.addEventListener("load", initApp);
 
 async function initApp() {
-  const machoke = await getCharacter();
+  const machoke = await getCharacter("https://raw.githubusercontent.com/JoeIbo1/pokemon/main/jason/pok.json");
   showCharacter(machoke);
+  showInformation(machoke);
+
 
 
 }
@@ -53,30 +57,30 @@ function showCharacter(character) {
 //   statsSpeed: "45",
 // };
 
-// function showInformation(pokemon) {
-//   const myHTML = /*html*/ `
-// <li>Name: ${pokemon.name}</li>
-// <li>Description: ${pokemon.description}</li>
-// <li>Ability: ${pokemon.ability}</li>
-// <li>Image: ${pokemon.image}</li>
-// <li>Footprint: ${pokemon.footprint}</li>
-// <li>Dexindex: ${pokemon.dexindex}</li>
-// <li>Type: ${pokemon.type}</li>
-// <li>subtype: ${pokemon.subtype}</li>
-// <li>Weaknesses: ${pokemon.weaknesses}</li>
-// <li>Gender: ${pokemon.gender}</li>
-// <li>Weight: ${pokemon.weight}</li>
-// <li>Height: ${pokemon.height}</li>
-// <li>Generation: ${pokemon.generation}</li>
-// <li>Spilversion: ${pokemon.spilversion}</li>
-// <li>Can Evolve: ${pokemon.canEvolve}</li>
-// <li>HP: ${pokemon.statsHP}</li>
-// <li>Attack: ${pokemon.statsAttack}</li>
-// <li>Special attack: ${pokemon.statsSpecialAttack}</li>
-// <li>Special defence: ${pokemon.statsSpecialDefence}</li>
-// <li>Speed: ${pokemon.statsSpeed}</li>
-// `;
-//   document.querySelector("#pokemons").insertAdjacentHTML("beforeend", myHTML);
-// }
+function showInformation(pokemon) {
+  const myHTML = /*html*/ `
+<li>Name: ${pokemon.name}</li>
+<li>Description: ${pokemon.description}</li>
+<li>Ability: ${pokemon.ability}</li>
+<li>Image: ${pokemon.image}</li>
+<li>Footprint: ${pokemon.footprint}</li>
+<li>Dexindex: ${pokemon.dexindex}</li>
+<li>Type: ${pokemon.type}</li>
+<li>subtype: ${pokemon.subtype}</li>
+<li>Weaknesses: ${pokemon.weaknesses}</li>
+<li>Gender: ${pokemon.gender}</li>
+<li>Weight: ${pokemon.weight}</li>
+<li>Height: ${pokemon.height}</li>
+<li>Generation: ${pokemon.generation}</li>
+<li>Spilversion: ${pokemon.spilversion}</li>
+<li>Can Evolve: ${pokemon.canEvolve}</li>
+<li>HP: ${pokemon.statsHP}</li>
+<li>Attack: ${pokemon.statsAttack}</li>
+<li>Special attack: ${pokemon.statsSpecialAttack}</li>
+<li>Special defence: ${pokemon.statsSpecialDefence}</li>
+<li>Speed: ${pokemon.statsSpeed}</li>
+`;
+  document.querySelector("#pokemons").insertAdjacentHTML("beforeend", myHTML);
+  
+}
 
-// showInformation(machoke);

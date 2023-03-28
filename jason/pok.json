@@ -12,7 +12,7 @@
   "weight": 70488,
   "height": 149.86,
   "generation":  1,
-  "spilVersion": "All versions",
+  "spilversion": "All versions",
   "canEvolve": true,
   "statsHP": 80,
   "statsAttack": 100,
@@ -21,3 +21,4 @@
   "statsSpecialDefence": 60,
   "statsSpeed": 45
 }
+

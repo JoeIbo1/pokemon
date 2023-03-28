@@ -5,9 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Applikation</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
 </head>
 <body>
-    <ul id="pokemons"></ul>
+    <header>
+        <h1>Pokemons Characters</h1>
+    </header>
+    <main>
+        <section id="characters" class="grid-container"></section>
+    </main>
+
+    <dialog id="dialog-character">
+        <section class="dialog-grid">
+            <figure><img id="dialog-image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/067.png" alt=""></figure>
+            <article>
+                <h2 id="dialog-title"></h2>
+                <h3 id="dialog-name"></h3>
+                <p id="dialog-description"></p>
+                <section>
+                    <h4>Personal Info</h4>
+                    <ul>
+                        <li>Gender: <span id="dialog-gender"></span></li>
+                        <li>Generation: <span id="dialog-generation"></span></li>
+                        <li>Height : <span id="dialog-height"></span></li>
+                        <li>Weight: <span id="dialog-weight"></span></li>
+                        <li>Can Evolve: <span id="dialog-can-evolve"></span></li>
+                        <li>Spil Version: <span id="dialog-spil-version"></span></li>
+                        <li>Dex Index: <span id="dialog-dexindex"></span></li>
+                        <li>Type: <span id="dialog-type"></span></li>
+                        <li>Subtype: <span id="dialog-subtype"></span></li>
+                        <li>Weaknesses: <span id="dialog-weaknesses"></span></li>
+                        <li>Ability: <span id="dialog-ability"></span></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Stats</h4>
+                    <ul>
+                        <li>Stats HP:<span id="dialog-statshp"></span></li>  
+                        <li>Stats Attack:<span id="dialog-statsattack"></span></li>
+                        <li>Stats Defence:<span id="dialog-statsdefence"></span></li>
+                        <li>Stats Special Attack:<span id="dialog-statsspecialattack"></span></li>
+                        <li>Stats Special Defence:<span id="dialog-statsspecialdefence"></span></li>
+                        <li>Stats Speed:<span id="dialog-statsspeed"></span></li>
+                    </ul>
+                </section>
+
+            </article>
+        </section>
+        <form method="dialog">
+            <button id="btn-cancel">Close</button>
+        </form>
+    </dialog>
+    <footer>
+        <p>Pokemon App by JOE</p>
+    </footer>
+
     <script src="app.js"></script>
 </body>
+
 </html>

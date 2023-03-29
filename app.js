@@ -44,7 +44,7 @@ function showPokemon(pokemon) {
   }
 }
 
-function showPokemonModal(pokemon) {
+function showPokemonModal(pokemon ) {
   console.log(pokemon);
   //image, name and description
   document.querySelector("#dialog-image").src = pokemon.image;
